@@ -2,6 +2,42 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=21644668&assignment_repo_type=AssignmentRepo)
 # COMP 163 - Project 2: Character Abilities Showcase
 
+---------
+
+# MY PROJECT OVERVIEW: Kayla Bagley 
+
+
+# WHAT I IMPLEMENTED
+I created a three inheritance level structure by Character, Player, and Warrior/Mage/Rogue. 
+Character was the base class that stored name, health, strength, and magic. I defined all these with the functions, attack(), take_damage(), and display_stats(). 
+Player, which was inherited from Character, I added speicifc player information like character class, level, and experience. I also overrided display_stats() to show the additional attributes the player had. 
+Finally, which was inherited from the Player, is either the Warrior, Mage or Rouge. Each of these subclasses had its own stats distributed with a special ability that was unlike each other. The warrior had the power_strike, the mage had the fireball, and the rogue had the sneak_attack. 
+I also added a Weapon class where characters can add weapons but it is not included in the inheritance chain and cannot be inherited from any of them. 
+
+# BONUS FEATURES 
+The only feature I added was the possibility to have weapons in the game that don't have to be involved in the  3 level chain I implemented. 
+
+# AI USUAGE
+Google Gemini - Helped me to understand the critical hit mechanice inside the rogue.attack. Needed to include import random at the top of my file for the critical hits to generate. Also GG helped me to see I missed a parenthesis in my warrior.attack method, because one test case wouldn't pass.
+
+# HOW TO RUN 
+python project2_starter.py, pytest
+
+# CHAIN 
+Character  
+│  
+Player  
+    - Warrior  
+    - Mage  
+    - Rogue
+
+
+
+-------------------- 
+
+
+
+
 ## 🎯 Project Overview
 
 Build a simple character system that demonstrates mastery of object-oriented programming fundamentals: inheritance, method overriding, polymorphism, and composition. This project focuses on core OOP concepts without the complexity of a full game system.
@@ -145,3 +181,4 @@ Feel free to add your own creative touches for bonus points:
 - Additional character classes beyond the three required
 - More weapon types with different properties
 - Enhanced special abilities with unique effects
+
